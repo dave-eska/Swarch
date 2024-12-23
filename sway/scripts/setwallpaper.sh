@@ -8,5 +8,6 @@ SELECTED=$(ls "$WALLPAPER_DIR" | dmenu -i -p "Select a wallpaper:")
 
 # If a file is selected, set it as wallpaper
 if [ -n "$SELECTED" ]; then
-	exec swww img "$WALLPAPER_DIR/$SELECTED" --transition-step 50 --transition-fps 60
+	#mpvpaper eDP-1 -o "loop" "$WALLPAPER_DIR/$SELECTED"  &
+	swww img "$WALLPAPER_DIR/$SELECTED" --outputs eDP-1 --transition-step 50 --transition-fps 255
 fi
