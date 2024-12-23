@@ -2,6 +2,7 @@
 My configuration for my Arch machine.
 
 Lists of software I use:
+
   -Sway => Window Manager
   
   -Waybar => Top Bar
