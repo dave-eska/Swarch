@@ -58,8 +58,10 @@ client.urgent				#000000 #000000 #FFFFFF #000000
 # Includes
 include ~/.config/sway/keybinds.conf
 include ~/.config/sway/autostart.conf
-include ~/.config/sway/windows.conf
 include ~/.config/sway/monitors.conf
+include ~/.config/sway/windows.conf
+
+input * xkb_options "caps:swapescape"
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -70,6 +72,9 @@ include ~/.config/sway/monitors.conf
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	font pango:FiraCode Nerd Font 14
-	status_command bumblebee-status -m battery cpu uptime memory -p time.format="%H:%M" -t default
+	font pango:FiraCode Nerd Font 13
+	#status_command bumblebee-status -m time pipewire brightness battery uptime memory -p time.format="%H:%M" -t iceberg-contrast
+	swaybar_command waybar
 }
+
+include ~/.config/sway/swayfx.conf
