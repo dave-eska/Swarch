@@ -1,7 +1,7 @@
 # Swarch
 My configuration for my Arch machine.
 
-#Lists of software I use:
+# Lists of software I use:
 
     -Swayfx => Pretty Window Manager
 
@@ -9,7 +9,7 @@ My configuration for my Arch machine.
 
     -Neovim => Code Editor
 
-#How to use it
+# How to use it
 
 ```
 mkdir ~/Backup
