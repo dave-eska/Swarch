@@ -19,10 +19,6 @@ font pango:FiraCode Nerd Font 11
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
-# Start XDG autostart .desktop files using dex. See also
-# https://wiki.archlinux.org/index.php/XDG_Autostart
-exec --no-startup-id dex --autostart --environment i3
-
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -48,7 +44,7 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 
 hide_edge_borders smart
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 5
 
 client.unfocused	        #000000 #000000 #FFFFFF #000000
 client.focused				#54416d #140b24 #FFFFFF #000000
