@@ -349,3 +349,7 @@ window#waybar.empty #window {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
 }
+
+#workspaces button {
+  min-width: 20px;
+}

@@ -54,12 +54,12 @@ client.urgent				#000000 #000000 #FFFFFF #000000
 include /etc/sway/config.d/*
 
 # Includes
-include ~/.config/sway/windows.conf
-include ~/.config/sway/keybinds.conf
 include ~/.config/sway/autostart.conf
+include ~/.config/sway/keybinds.conf
 include ~/.config/sway/monitors.conf
+include ~/.config/sway/windows.conf
 
-input * xkb_options "caps:swapescape"
+#input * xkb_options "caps:swapescape"
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"

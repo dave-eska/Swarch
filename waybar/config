@@ -1,6 +1,7 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 
 // ### DEFAULT v3  - Top ### //
+[
 {
 	"include": [
 		"$HOME/.config/waybar/Modules",
@@ -28,11 +29,14 @@
 	"custom/separator#blank",
 	"custom/separator#line",
 	"custom/weather",
-	"hyprland/window"
+	"hyprland/window",
+	"custom/separator#dot-line",
+	"sway/window"
 	],
 
 	"modules-center": [
 		"custom/swaync",
+	"sway/workspaces",
 	"hyprland/workspaces#kanji",
 	"hyprland/submap"
 	],
@@ -47,3 +51,27 @@
 	"clock",
 	],
 }
+/*,{
+	"include": [
+		"$HOME/.config/waybar/Modules",
+		"$HOME/.config/waybar/ModulesWorkspaces",
+		"$HOME/.config/waybar/ModulesCustom",
+		"$HOME/.config/waybar/ModulesGroups",
+	],
+	"layer": "top",
+	"mode": "dock",
+	"exclusive": true,
+	"passthrough": false,
+	"position": "bottom",
+	"spacing": 3,
+	"fixed-center": true,
+	"ipc": true,
+	"margin-top": 3,
+	"margin-left": 8,
+	"margin-right": 8,
+
+	"modules-center": [
+		"wlr/taskbar"
+	],
+}*/
+]
